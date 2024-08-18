@@ -53,7 +53,7 @@ class AddProductStateAttribute implements DataPatchInterface, PatchRevertableInt
             self::ATTRIBUTE_CODE,
             [
                 'type' => 'int',
-                'label' => __('Product State 1'),
+                'label' => __('Product State'),
                 'global' => ScopedAttributeInterface::SCOPE_WEBSITE,
                 'sort_order' => '110',
                 'input' => 'select',
@@ -61,7 +61,7 @@ class AddProductStateAttribute implements DataPatchInterface, PatchRevertableInt
                 'used_in_product_listing' => true,
                 'is_used_in_grid' => true,
                 'user_defined' => true,
-                'system' => false, //Do we need it?
+                'system' => false,
                 'source' => Options::class,
                 'group' => 'Product Details',
                 'sets' => ['Default'],
