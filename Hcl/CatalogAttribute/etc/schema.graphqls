@@ -1,0 +1,5 @@
+extend interface ProductInterface {
+    product_state: String
+    @doc(description: "Product state attribute resolver.")
+    @resolver(class: "Hcl\\CatalogAttribute\\Model\\Resolver\\ProductStateResolver")
+}
