@@ -25,7 +25,8 @@ class ProductStateResolver implements ResolverInterface
 
     public function __construct(
         private ProductResource $productResource
-    ) {}
+    ) {
+    }
 
     /**
      * @inheritdoc

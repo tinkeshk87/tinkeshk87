@@ -23,10 +23,15 @@ class AddProductStateAttribute implements DataPatchInterface, PatchRevertableInt
 {
     private const ATTRIBUTE_CODE = 'product_state';
 
+    /**
+     * @param ModuleDataSetupInterface $moduleDataSetup
+     * @param EavSetupFactory $eavSetupFactory
+     */
     public function __construct(
         private ModuleDataSetupInterface $moduleDataSetup,
         private EavSetupFactory $eavSetupFactory,
-    ) {}
+    ) {
+    }
 
     /**
      * @inheritdoc
